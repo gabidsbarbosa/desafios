@@ -1,0 +1,34 @@
+
+body {
+    margin-top: 38px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    margin-right: 150px;
+}
+
+body.background {
+    margin:10px, 0, 0, 0;
+}
+
+.b { 
+    margin: 0 0 0 auto;
+}
+
+.t {
+    padding: 5px;
+}
+
+
+h4 {
+    text-align: center;
+}
+
+.c { 
+    display: flex; 
+    align-items: center; 
+}
+
+.h { 
+    height: 30dw;
+    width: 65dw;
+ }

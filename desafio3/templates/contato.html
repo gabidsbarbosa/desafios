@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "{{ url_for('static', filename='css/meuestilo.css') }}">
+    <title>Contato</title>
+</head>
+<body background="/static/images/fundo.png"></body>
+<body>
+    <div class="c">
+        <div class="a">
+            <img class="h" src="static/images/logo.png" alt="logo UNES">
+        </div>
+        <div class="b">
+            <a href="/">Home</a> | <a href="/quemsomos">Quem Somos</a> | <a href="/contato">Contato</a>
+        </div>
+        
+    </div>
+
+    <div>
+    <h1>Entre em contato</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            
+           <label for="mail">E-mail:</label><br>
+           <input type="email" id="mail" name="user_email">
+        
+         <br>
+         <br>
+         
+           <label for="msg">Assunto:</label><br>
+           <textarea id="msg" name="user_message"></textarea>
+         
+         <br>
+        
+           <label for="msg">Descrição:</label><br>
+           <textarea id="msg" name="user_message"></textarea>
+        
+        </ul>
+       </form>
+
+    
+
+    </div>
+<br><br>
+
+    <div>
+        <h4>Todos os direitos reservados</h4>
+    </div>
+    
+</body>
+</html>
