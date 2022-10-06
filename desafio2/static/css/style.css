@@ -3,11 +3,56 @@ body {
     font-family: 'Abyssinica SIL', serif;
 }
 
+main {
+    float: left;
+    margin-left: 30%;
+}
+
 header {
     font-family: 'Abyssinica SIL', serif;
-    background-color: rgb(206, 196, 53);
+    background-color: rgb(230, 179, 40);
     text-align: center;
     color: white;
+    margin-top: -25px;
+    margin-left: -15px;
+}
+
+h2 {
+    color: rgb(218, 152, 31);
+}
+
+h3 {
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+} 
+
+li {
+    color: rgb(216, 148, 0);
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    background-color: gray;
+    width: 34%;
+    margin-left: 600px;
+}
+
+aside {
+    float: left;
+    margin-top: 0.75%;
+}
+
+.formato {
+    max-width: 680px;
+    width: 90%;
+    margin: 22px auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .mais {
@@ -15,6 +60,18 @@ header {
     font-weight: bold;
 }
 
-.postagem-1 {
-    background-color: antiquewhite;
+.postagem {
+    background-color: rgb(241, 236, 228);
+    text-align: center;
 }
+
+.caixas {
+    background-color: rgb(241, 236, 228);
+}
+
+.titulo {
+    color: rgb(0, 0, 158);
+}
+
+
+
