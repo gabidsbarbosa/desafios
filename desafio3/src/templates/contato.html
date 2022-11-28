@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+    <h1>Entre em contato</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+            
+           <label for="mail">E-mail:</label><br>
+           <input type="email" id="mail" name="user_email" required>
+        
+         <br>
+         
+           <label for="msg">Assunto:</label><br>
+           <input id="msg" name="user_message" required>
+         
+         <br>
+        
+           <label for="msg">Descrição:</label><br>
+           <input id="msg" name="user_message" required></input>
+        
+        </ul>
+
+       <input type="submit">
+       
+       </form>
+    </div>
+
+{% endblock content %}

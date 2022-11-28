@@ -1,25 +1,6 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel= "stylesheet" href= "{{ url_for('static',filename='css/meuestilo.css') }}">
-        <title>UNES</title>
+{% extends 'base.html' %}
 
-    </head>
-
-    <body background="/static/images/fundo2.png"></body>
-    <body>
-        <div  class="c">
-            <div class="a">
-                <img class="h" src="/static/images/logo.png" alt="logo UNES">
-            </div>
-            <div class="b">
-                <a href="/">Home</a> | <a href="/quemsomos">Quem Somos</a> | <a href="/contato">Contato</a>
-            </div>
-            
-        </div>
+{% block content %}
         <div>
         <h1>Quem Somos</h1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore beatae a qui atque deleniti veritatis, 
@@ -38,18 +19,12 @@
         </div>
     <hr>
         <div>
-            <h1>Objetivos</h1>
-        
+            <h1>Objetivos</h1>        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe corporis eius odio dolores ipsam 
        voluptatibus obcaecati aliquam recusandae sunt tenetur error iusto ea esse deserunt ut, amet hic dolor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe corporis eius odio dolores ipsam 
        voluptatibus obcaecati aliquam recusandae sunt tenetur error iusto ea esse deserunt ut, amet hic dolor. 
        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium saepe corporis eius odio dolores ipsam 
        voluptatibus obcaecati aliquam recusandae sunt tenetur error iusto ea esse deserunt ut, amet hic dolor!</p>
-        
         </div>
-        <br><br>
-        <div>
-            <h4>Todos os direitos reservados</h4>
-        </div>
-    </body>
-    </html>
+
+{% endblock content %}
