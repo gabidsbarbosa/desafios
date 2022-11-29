@@ -35,14 +35,10 @@ def contatos():
         email = request.form['email']
         assunto = request.form['assunto']
         descricao = request.form['descricao']
-        
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO contatos(email, assunto, descricao) VALUES (%s, %s, %s)", (email, assunto, descricao))
-       
+        cur.execute("INSERT INTO contato(email, assunto, descricao) VALUES (%s, %s, %s)", (email, assunto, descricao))
         mysql.connection.commit()
-        
         cur.close()
-
         return 'sucesso'
     return render_template('contato.html')
 
@@ -51,10 +47,7 @@ def contatos():
 @app.route('/users')
 def users():
     cur = mysql.connection.cursor()
-
-    users = cur.execute("SELECT * FROM contatos")
-
+    users = cur.execute("SELECT * FROM desafios.contato")
     if users > 0:
         userDetails = cur.fetchall()
-
-        return render_template("users.html", userDetails=userDetails)
+        return render_template("users.html", userMessages=userMessages)
