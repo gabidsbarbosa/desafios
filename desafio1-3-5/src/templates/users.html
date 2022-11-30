@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}    
+
+<table id="users" class="display">
+    <thead>
+
+        <tr>
+            <th>E-mail</th>
+            <th>Assunto</th>
+            <th>Descrição</th>
+
+        </tr>
+    </thead>
+    
+    {% for user in userMessages %}
+    
+    <tbody>
+        <tr>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+            <td>{{user[3]}}</td>
+        </tr>
+    </tbody>   
+
+    {% endfor %}
+
+    <tbody>
+        <tr>
+            <td>Muito</td>
+            <td>Obrigada</td>
+            <td>Aline</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  
+{% endblock content %}

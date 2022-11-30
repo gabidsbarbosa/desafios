@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "{{ url_for('static', filename='css/meuestilo.css') }}">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="c">
+        <div class="a">
+            <img class="h" src="static/images/logo.png" alt="logo UNES">
+        </div>
+        <div class="b">
+            <a href="/">Home</a> | <a href="/quemsomos">Quem Somos</a> | <a href="/contato">Contato</a>
+        </div>
+    </div>
+
+    {% block content %} 
+    {% endblock content %}
+
+    <div>
+        <h4>Todos os direitos reservados</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+    <h1>Entre em contato</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <hr>
+    <form method="POST" action="/contato">
+        <ul>
+           <label for="email">E-mail:</label><br>
+           <input type="email" id="email" name="email" required><br>
+           <label for="msg">Assunto:</label><br>
+           <input id="msg" name="assunto" required><br>
+           <label for="msg">Descrição:</label><br>
+           <input id="msg" name="descricao" required>
+        </ul>
+       <input type="submit" value="Enviar">
+       </form>
+    </div>
+
+{% endblock content %}
